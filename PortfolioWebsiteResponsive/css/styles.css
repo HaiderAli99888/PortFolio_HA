@@ -1,0 +1,334 @@
+/* 
+Website Author: Haider Ali
+
+Color Guide:
+#DCDCDC light grey
+#f1f1f1 creamy white
+#ccc grey
+#333 black
+#0071bc light blue
+#002047 dark blue
+white
+
+Typography:
+
+
+***********
+=================
+Table of Contents
+=================
+
+** Header Styles
+** Body Styles
+** Footer Styles
+***********
+*/
+
+/*******
+. Header Styles 
+********/
+
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0071bc;
+}
+
+/*******
+. Body Styles 
+********/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DCDCDC;
+}
+
+.container {
+
+    padding: 20px;
+}
+
+.container h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+
+    font-size: 35px;
+}
+
+.container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.container li {
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.container p {
+    margin: 0;
+}
+
+.courses {
+
+    padding: 20px;
+    margin-bottom: 45px;
+}
+
+.courses h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+
+    font-size: 35px;
+}
+
+.courses h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.courses ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.courses img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.courses li {
+    margin-bottom: 20px;
+}
+
+.courses h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.courses p {
+    margin: 0;
+}
+
+.skills h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 0px;
+}
+
+.skills img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.skills {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.skills li {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: justify;
+}
+
+section img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+section p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1b5c81;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #002047;
+}
+
+.mywork {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project h2 {
+    margin: 20px 0;
+}
+
+.project p {
+    font-size: 14px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/*******
+. Footer Styles 
+********/
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/*******
+. Responsive Layout 
+********/
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
