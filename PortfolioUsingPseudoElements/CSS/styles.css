@@ -1,0 +1,290 @@
+/* 
+Website Author: Haider Ali
+
+Color Guide:
+rgb(0, 0, 0) black
+#333 dark grey
+dark green
+rgb(255,255,255) white
+rgb(0,0,255) blue
+#000080 navy
+antique white
+
+Typography:
+@font-face {
+    font-family: 'code';
+    src: url(/Fonts/sharetechmono-regular-webfont.ttf);
+    src: url(/Fonts/sharetechmono-regular-webfont.woff);
+    src: url(/Fonts/sharetechmono-regular-webfont.woff2);
+}
+
+***********
+=================
+Table of Contents
+=================
+
+** Header Styles
+** Body Styles
+** Footer Styles
+***********
+*/
+
+@font-face {
+    font-family: 'code';
+    src: url(/Fonts/sharetechmono-regular-webfont.ttf);
+    src: url(/Fonts/sharetechmono-regular-webfont.woff);
+    src: url(/Fonts/sharetechmono-regular-webfont.woff2);
+}
+
+
+/*******
+. Header Styles 
+********/
+
+header {
+    margin: 0px 25px 20px 40px;
+
+}
+
+header h1 {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+nav {
+    padding-bottom: 5px;
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+
+}
+
+nav ul li a:visited {
+    color: darkgreen;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    border: 0.5px solid black;
+
+}
+
+header img {
+    height: 120px;
+    width: 150px;
+    padding-top: 5px;
+}
+
+/*******
+. Body Styles 
+********/
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+
+    background-color: #556;
+    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+        linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+        linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+        linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+        linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+        linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background-attachment: fixed;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+}
+
+main {
+    margin: 0px 25px 20px 40px;
+    background-color: white;
+    border: 0.5px solid black;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+article img {
+    height: 300px;
+    width: 1200px;
+}
+
+article {
+    text-align: center;
+    position: relative;
+}
+
+article h4 {
+    position: absolute;
+    top: 86.2%;
+    left: 56.1%;
+    background-color: white;
+    padding: 10px 180px 10px 180px;
+}
+
+article h2 {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+
+}
+
+main div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+div aside {
+
+    line-height: 1.5em;
+    margin-left: 45px;
+}
+
+aside ul {
+    list-style-type: decimal;
+
+}
+
+div section {
+
+    line-height: 1.5em;
+    margin-left: 135px;
+}
+
+section h2 {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section article {
+    margin-right: 15px;
+    border-top: 1px solid black;
+    text-align: justify;
+}
+
+article p {
+    margin-top: 15px;
+}
+
+article h3 {
+    margin-top: 15px;
+}
+
+article p:first-of-type::first-letter {
+    font-size: 2em;
+}
+
+article h3 a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    text-transform: uppercase;
+}
+
+article h3 a:hover {
+    text-decoration: none;
+}
+
+article h3 a:visited {
+    color: blue;
+}
+
+article h3 {
+    padding-bottom: 10px;
+}
+
+
+aside h2 {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main figure {
+    font-family: 'code', Arial, monospace;
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bold;
+
+    margin: 0 200px;
+    border: 1px solid black;
+
+}
+
+main figure p {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    float: right hidden;
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+
+cite {
+    font-style: italic;
+    color: navy;
+}
+
+/*******
+. Footer Styles 
+********/
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0px 25px 20px 40px;
+}
+
+footer::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/griffin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 20px;
+}
+
+footer p {
+    margin: 0;
+    margin-right: 70px;
+    flex: 1;
+    text-align: center;
+    font-size: 15px;
+}
