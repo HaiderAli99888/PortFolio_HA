@@ -1,0 +1,102 @@
+/* 
+Website Author: Haider Ali
+
+***********
+=================
+Table of Contents
+=================
+** Body Styles
+** Footer Styles
+***********
+*/
+
+
+/*******
+. Body Styles 
+********/
+body {
+    background: radial-gradient(#e66465, #9198e5);
+}
+
+body {
+    padding: 15px;
+}
+
+body img:first-of-type {
+
+    margin-left: 10%;
+}
+
+article p:nth-child(n+0) {
+    background: radial-gradient(rgb(197, 130, 130), rgb(107, 212, 114));
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h1::after {
+
+    content: "  --not for heart patients";
+    font-size: 1rem;
+
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin-left: 35%;
+    margin-right: 35%;
+    position: fixed;
+    font-size: 85px;
+}
+
+h1 {
+    background-image: url('../images/BckGif.gif');
+}
+
+h2::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(42, 1, 48);
+}
+
+h2:last-of-type {
+    font-size: 1.5rem;
+    color: rgb(122, 45, 65);
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+figure {
+    margin-top: 0px;
+}
+
+figcaption {
+    margin-left: 10%;
+    color: rgb(52, 52, 189);
+}
+
+img {
+    width: 80%;
+    height: 50%;
+}
+
+figcaption {
+    font-size: 1rem;
+}
+
+/*******
+. Footer Styles 
+********/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: radial-gradient(red, rgb(55, 138, 61));
+    color: black;
+    text-align: center;
+}
