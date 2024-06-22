@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.header {
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+.header.scrolled {
+    background: #333;
+}
+
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 15px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    color: #fff !important;
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0066cc !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0066cc;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hero-section {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-section,
+.skills-section,
+.projects-section,
+.contact-section {
+    background: #1e1e1e;
+    color: #ddd;
+    padding: 60px 0;
+}
+
+.about-section h2,
+.skills-section h2,
+.projects-section h2,
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-item {
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+.project-card {
+    background: #333;
+    border: none;
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0066cc;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .hero-section {
+        padding: 2rem;
+    }
+
+    .about-section,
+    .skills-section,
+    .projects-section,
+    .contact-section {
+        padding: 40px 0;
+    }
+
+    .skill-item {
+        margin-bottom: 1rem;
+    }
+
+    .project-card {
+        margin-bottom: 1rem;
+    }
+}

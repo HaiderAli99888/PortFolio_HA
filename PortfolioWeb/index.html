@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haider Ali's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.0.9/css/glightbox.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand" href="#">Haider Ali</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container text-center text-white" data-aos="fade-up">
+            <h1 class="display-4">Welcome to My Portfolio</h1>
+            <p class="lead">Hi, I'm Haider Ali, a passionate web developer and aspiring ASP.NET Core developer.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center">About Me</h2>
+            <p>I am a recent graduate of St. Clair College with a degree in Web Development and Internet Applications. Currently, I am working as a baker at Tim Hortons.</p>
+            <p>My journey into web development began with learning C#, and I am now focusing on becoming an ASP.NET Core developer with plans to integrate Angular into my projects.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="skill-item" data-aos="zoom-in" data-toggle="tooltip" data-placement="top" title="Proficient in C#">
+                        <i class="fab fa-microsoft fa-3x"></i>
+                        <h3>C#</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-item" data-aos="zoom-in" data-toggle="tooltip" data-placement="top" title="Experienced with ASP.NET Core">
+                        <i class="fab fa-microsoft fa-3x"></i>
+                        <h3>ASP.NET Core</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-item" data-aos="zoom-in" data-toggle="tooltip" data-placement="top" title="Skilled in Web Development">
+                        <i class="fas fa-code fa-3x"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-item" data-aos="zoom-in" data-toggle="tooltip" data-placement="top" title="Learning Angular">
+                        <i class="fab fa-angular fa-3x"></i>
+                        <h3>Angular (future)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card" data-aos="fade-up">
+                        <a href="3.png" class="glightbox">
+                            <img src="3.png" class="card-img-top" alt="Project Image">
+                        </a>
+                        <a href="4.png" class="glightbox">
+                            <img src="4.png" class="card-img-top" alt="Project Image">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Slipper.net</h5>
+                            <p class="card-text">A project developed using ASP.NET Core.</p>
+                            <a href="https://github.com/HaiderAli99888/slipper.net" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Contact</h2>
+            <form id="contactForm" data-aos="fade-up">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <p class="text-center mt-3">Email: <a href="mailto:alihaiderr528@gmail.com">alihaiderr528@gmail.com</a></p>
+            <p class="text-center">Phone: 226-758-7044</p>
+            <p class="text-center">Address: 2651 Maitland Ave, Windsor, Ontario</p>
+        </div>
+    </section>
+
+    <footer class="footer py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Haider Ali. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://github.com/HaiderAli99888" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/your-profile" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.0.9/js/glightbox.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
